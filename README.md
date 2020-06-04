@@ -1,5 +1,6 @@
 # PanzerWaltzGearSetupsParser
 Simple ass code to grab all the "c_EquipSaveData" from the "Cocos2dxPrefsFile.xml" file from Android PanzerWaltz.
+
 Code is in Javascript and runs on a Web Browser's Console.
 
 Made on 5th June, 2020 by Coppy and/or Coppeh.
