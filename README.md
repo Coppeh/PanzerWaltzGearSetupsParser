@@ -8,6 +8,8 @@ Works on PanzerWaltz 1.12.3.4
 
  Introduction:
  
+# Wait... why are you still reading this? Please read PW Code.txt instead, it's the same thing but without the broken text formatting that you will see below!
+ 
 In PanzerWaltz, you can Equip your Tanks with various Gears. You can also Save your setup and Restore them later.
 But, the setups are saved on your Phone, so if you reinstall the game, you will lose your setups, meaning you will need to re-Save each Tank's Gear Setups by hand, which is tedious if you have a lot of setups. So very tedious... that I've dedicated a half day on the following code.
 Anyway, the setups are saved deep inside your phone, in the root folder of the game's folder, in an .xml file, inside a "string" element called "c_EquipSaveData_<tankID?>_GroupA_<anotherID>", as a string.
