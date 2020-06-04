@@ -5,6 +5,7 @@ Made on 5th June, 2020 by Coppy and/or Coppeh.
 Works on PanzerWaltz 1.
 
  Introduction:
+ 
  In PanzerWaltz, you can Equip your Tanks with various Gears. You can also Save your setup and Restore them later.
  But, the setups are saved on your Phone, so if you reinstall the game, you will lose your setups, meaning you will
  need to re-Save each Tank's Gear Setups by hand, which is tedious if you have a lot of setups. So very tedious...
@@ -30,6 +31,7 @@ Works on PanzerWaltz 1.
  - A text editor (ie. Notepad, Notepad++)
 
  WARNING:
+ 
  Use this on NEW, FRESH PanzerWaltz installs because messing with the files and folders CAN screw up the
  game and you may end up having to reinstall. (Which will make you lose all the data that is not stored 
  on the Game's server. ie. Existing save equips, login info, current settings like "Subtitle On" etc.)
@@ -40,6 +42,7 @@ Works on PanzerWaltz 1.
  Only Copying the .xml file from the OLD install and pasting it somewhere else SHOULD be safe.
 
  More Warning:
+ 
  Moving these SaveData into a not-fresh PanzerWaltz install is untested.
 
 
@@ -57,11 +60,13 @@ Works on PanzerWaltz 1.
  (Searching from the Root folder lets the Searcher search all the nested folders)
 
  WARNING (Again! This is important!):
+ 
  Use this for NEW FRESH PanzerWaltz installs because messing with the files and folders can screw up your
  install.
 
 
  Disclaimers:
+ 
  The game PanzerWaltz is the property of its respective owner(s).                               
  I am not also paid by them or anyone to write the following codes.                             
 
