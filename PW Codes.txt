@@ -105,14 +105,14 @@
 
 var strCol = document.getElementsByTagName("string"); // Collects all the <string> tags in the .xml
 
-let result = "";                              // Reserves a "result" object for our... result
+let result = "";                                      // Reserves a "result" object for our... result
 
-for (let i = 0; i < strCol.length; i++) {     // A FOR loop to look through the above's "strCol" 1-by-1
-	let ele = strCol[i].getAttribute("name"); // Grabs the "name" attribute. ie. c_EquipSaveData_<things>
-	let res = ele.split("c_Equip");           // Splits the "name" if it matches "c_Equip"
-	if (res[1]) {                             // True if split was a success
+for (let i = 0; i < strCol.length; i++) {             // A FOR loop to look through the above's "strCol" 1-by-1
+	let ele = strCol[i].getAttribute("name");     // Grabs the "name" attribute. ie. c_EquipSaveData_<things>
+	let res = ele.split("c_Equip");               // Splits the "name" if it matches "c_Equip"
+	if (res[1]) {                                 // True if split was a success
 		let str = strCol[i].outerHTML;        // Grabs the entire <string> tag with attributes and content
 		result += "    " + str + "\n";        // Adds what we got above to our result, with "spaces" and \newline
   }
 }
-console.log(result);                          // Outputs the "result" onto the console.
+console.log(result);                                  // Outputs the "result" onto the console.
