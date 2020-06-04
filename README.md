@@ -110,7 +110,7 @@ So please make a backup of all your data.
      
 		</map>
   
-  You will want to put the "<string name=..." in after the following line:
+  You will want to put the "<string name=c_EquipSaveData" strings in after the following line:
   
 			<string name="c_ChapterLevel_GroupA_156510">00000000</string>
      
