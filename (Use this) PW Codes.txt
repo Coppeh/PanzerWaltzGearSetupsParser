@@ -1,7 +1,7 @@
 // Simple ass code to grab all the "c_EquipSaveData" from the "Cocos2dxPrefsFile.xml" file from Android PanzerWaltz.
 // Coded in Javascript, runs on a Web Browser's Console.
 // Made on 5th June, 2020 by Coppy and/or Coppeh.
-// Works on PanzerWaltz 1.
+// Works on PanzerWaltz 1.12.3.4
 //
 // Introduction:
 // In PanzerWaltz, you can Equip your Tanks with various Gears. You can also Save your setup and Restore them later.
