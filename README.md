@@ -3,6 +3,7 @@ Simple ass code to grab all the "c_EquipSaveData" from the "Cocos2dxPrefsFile.xm
 Code is in Javascript and runs on a Web Browser's Console.
 
 Made on 5th June, 2020 by Coppy and/or Coppeh.
+
 Works on PanzerWaltz 1.12.3.4
 
  Introduction:
