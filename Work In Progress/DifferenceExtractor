@@ -16,7 +16,7 @@ let temp = [];                                        // For an Array of differe
 
 for (let i = 0; i < strCol.length; i++) {             // A FOR loop to look through the above's "strCol" 1-by-1
   let ele = strCol[i].getAttribute("name");     // Grabs the "name" attribute. ie. c_EquipSaveData_<things>
-  let str = ele.split("_", 3);               // Splits the "name" if it matches "c_Equip"
+  let str = ele.split("_", 3);               // Splits the "name" if it matches "_" but do this twice to keep only 3 sub-strings
   let res = str[2];
   if (i < 42) {                            // Old has 42 items; New has 44 items
     numbers.push(res);
