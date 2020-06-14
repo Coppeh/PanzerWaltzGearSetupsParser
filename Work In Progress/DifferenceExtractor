@@ -1,0 +1,50 @@
+// Requirements: Combine two Coco files but nest every <string> inside of the same <map> and make sure there's only one <map>
+// Old Coco must have 42 Gear Setups and the New one must have only 2 extras
+// Outputs just the two extras <string> (because doing this manually is a pain).
+// Purpose: To study how the setups are arrange in the Coco file.
+// Current discovery: "0400" (only 2 zeroes) marks the start of each Gear Slot
+//                    "A61F" and "8E23" are both Turret MG, one is Level 1, the other Level 2
+// Goal: 3rd Party Gear Setup Saver that can be used to merge with an existing Coco file for faster Setup Planning
+//       Maybe even make it possible to share Setups easily (or just backup/restore).
+
+var strCol = document.getElementsByTagName("string"); // Collects all the <string> tags in the .xml
+
+let result = "";                                      // Reserves a "result" object for our... result
+let resultArr = [];
+let numbers = [];
+let temp = [];                                        // For an Array of different Equip Saves
+
+for (let i = 0; i < strCol.length; i++) {             // A FOR loop to look through the above's "strCol" 1-by-1
+  let ele = strCol[i].getAttribute("name");     // Grabs the "name" attribute. ie. c_EquipSaveData_<things>
+  let str = ele.split("_", 3);               // Splits the "name" if it matches "c_Equip"
+  let res = str[2];
+  if (i < 42) {                            // Old has 42 items; New has 44 items
+    numbers.push(res);
+  }
+  if (i >= 42) {
+     temp.push(res);
+  }
+}
+for (let i = 0; i < numbers.length; i++) {
+  for (let j = 0; j < temp.length; j++) {
+    if (numbers[i] === temp[j]) {
+      temp[j] = 0;
+    }
+  }
+}
+for (let i = 0; i < temp.length; i++) {
+  if (temp[i] != 0) {
+    resultArr.push(temp[i]);
+  }
+}
+for (let i = 0; i < strCol.length; i++) {
+  let ele = strCol[i].getAttribute("name");
+  for (let j = 0; j < resultArr.length; j++) {
+    let res = ele.split(resultArr[j]);
+    if (res[1]) {
+      let str = strCol[i].outerHTML;
+      result += "    " + str + "\n";
+    }
+  }
+}
+console.log(result);
