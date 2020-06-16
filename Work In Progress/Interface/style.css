@@ -1,0 +1,67 @@
+body {
+    background-color: gray;
+    color: cyan;
+}
+
+.grid-container {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 1fr;
+    gap: 1px 1px;
+    grid-template-areas: "left right";
+    background-color: cyan;
+    height: 100%;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#left {
+    grid-area: left;
+    background-color: gray;
+    font-family: /* Based on https://www.w3schools.com/cssref/css_websafe_fonts.asp" */
+    "Lucida Console", Monaco, monospace;
+    font-size: 1.35em;
+}
+
+#left>nav>ul>li>a {
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    line-height: 100%;
+    height: 20%;
+    padding: 15px;
+    border: 2px groove rgb(249, 77, 255);
+    color: yellow;
+    background-color: rgb(144, 54, 196);
+}
+
+#left>nav>ul>li>a:hover {
+    transition-duration: 0.3s;
+    border: 2px outset rgb(110, 189, 110);
+    color: blue;
+    background-color: greenyellow;
+}
+
+#left>nav>ul>li>a:active {
+    color: cadetblue;
+    border: 2px inset rgb(110, 189, 110);
+}
+
+#right {
+    grid-area: right;
+    background-color: rgb(112, 134, 255);
+}
+
+@media screen and (min-width:650px) {
+
+    div.benefits 				{ margin-top:12%; width:30%; }
+    div.requirements 			{ width:69%; }
+    
+}
